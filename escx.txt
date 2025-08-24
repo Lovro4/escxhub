@@ -1,0 +1,266 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local topbar = Instance.new("Frame")
+local main = Instance.new("Frame")
+local infiniteyield = Instance.new("TextButton")
+local escxbackshoter = Instance.new("TextButton")
+local c00lclan = Instance.new("TextButton")
+local z3us = Instance.new("TextButton")
+local rochips = Instance.new("TextButton")
+local sphub = Instance.new("TextButton")
+local label = Instance.new("TextLabel")
+local exit = Instance.new("TextButton")
+local minimize = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+topbar.Name = "topbar"
+topbar.Parent = ScreenGui
+topbar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+topbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+topbar.BorderSizePixel = 0
+topbar.Position = UDim2.new(0.151202753, 0, 0.19974874, 0)
+topbar.Size = UDim2.new(0, 383, 0, 43)
+topbar.Active = true
+
+main.Name = "main"
+main.Parent = topbar
+main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0, 0, 1, 0)
+main.Size = UDim2.new(0, 383, 0, 243)
+main.Active = true
+
+infiniteyield.Name = "infiniteyield"
+infiniteyield.Parent = main
+infiniteyield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infiniteyield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+infiniteyield.BorderSizePixel = 0
+infiniteyield.Position = UDim2.new(0.0757180154, 0, 0.0493827164, 0)
+infiniteyield.Size = UDim2.new(0, 142, 0, 30)
+infiniteyield.Font = Enum.Font.SciFi
+infiniteyield.Text = "Infinite Yield"
+infiniteyield.TextColor3 = Color3.fromRGB(0, 0, 0)
+infiniteyield.TextSize = 14.000
+infiniteyield.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+
+escxbackshoter.Name = "escxbackshoter"
+escxbackshoter.Parent = main
+escxbackshoter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+escxbackshoter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+escxbackshoter.BorderSizePixel = 0
+escxbackshoter.Position = UDim2.new(0.553524792, 0, 0.0493827164, 0)
+escxbackshoter.Size = UDim2.new(0, 142, 0, 30)
+escxbackshoter.Font = Enum.Font.SciFi
+escxbackshoter.Text = "EscX Backshoter"
+escxbackshoter.TextColor3 = Color3.fromRGB(0, 0, 0)
+escxbackshoter.TextSize = 14.000
+escxbackshoter.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Lovro4/escxbackshoter/main/txt.txt",true))()
+end)
+
+c00lclan.Name = "c00lclan"
+c00lclan.Parent = main
+c00lclan.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+c00lclan.BorderColor3 = Color3.fromRGB(0, 0, 0)
+c00lclan.BorderSizePixel = 0
+c00lclan.Position = UDim2.new(0.0757180154, 0, 0.38271606, 0)
+c00lclan.Size = UDim2.new(0, 142, 0, 30)
+c00lclan.Font = Enum.Font.SciFi
+c00lclan.Text = "c00lclan"
+c00lclan.TextColor3 = Color3.fromRGB(0, 0, 0)
+c00lclan.TextSize = 14.000
+c00lclan.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/cfsmi2/c00lguiv1/refs/heads/main/Main.lua", true))()
+end)
+
+z3us.Name = "z3us"
+z3us.Parent = main
+z3us.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+z3us.BorderColor3 = Color3.fromRGB(0, 0, 0)
+z3us.BorderSizePixel = 0
+z3us.Position = UDim2.new(0.0757180154, 0, 0.74485594, 0)
+z3us.Size = UDim2.new(0, 142, 0, 30)
+z3us.Font = Enum.Font.SciFi
+z3us.Text = "Z3US"
+z3us.TextColor3 = Color3.fromRGB(0, 0, 0)
+z3us.TextSize = 14.000
+z3us.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/Z3US/refs/heads/main/main.lua"))()
+end)
+
+rochips.Name = "rochips"
+rochips.Parent = main
+rochips.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rochips.BorderColor3 = Color3.fromRGB(0, 0, 0)
+rochips.BorderSizePixel = 0
+rochips.Position = UDim2.new(0.553524792, 0, 0.38271606, 0)
+rochips.Size = UDim2.new(0, 142, 0, 30)
+rochips.Font = Enum.Font.SciFi
+rochips.Text = "Rochips"
+rochips.TextColor3 = Color3.fromRGB(0, 0, 0)
+rochips.TextSize = 14.000
+rochips.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-Rochips-Universal-21865"))()
+end)
+
+sphub.Name = "sphub"
+sphub.Parent = main
+sphub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+sphub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+sphub.BorderSizePixel = 0
+sphub.Position = UDim2.new(0.553524792, 0, 0.74485594, 0)
+sphub.Size = UDim2.new(0, 142, 0, 30)
+sphub.Font = Enum.Font.SciFi
+sphub.Text = "SP Hub"
+sphub.TextColor3 = Color3.fromRGB(0, 0, 0)
+sphub.TextSize = 14.000
+sphub.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/as6cd0/SP_Hub/refs/heads/main/Brookhaven"))()
+end)
+
+label.Name = "label"
+label.Parent = topbar
+label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+label.BackgroundTransparency = 1.000
+label.BorderColor3 = Color3.fromRGB(0, 0, 0)
+label.BorderSizePixel = 0
+label.Position = UDim2.new(0, 0, -0.162790701, 0)
+label.Size = UDim2.new(0, 200, 0, 50)
+label.Font = Enum.Font.Jura
+label.Text = "EscX Hub"
+label.TextColor3 = Color3.fromRGB(255, 255, 255)
+label.TextSize = 50.000
+
+exit.Name = "exit"
+exit.Parent = topbar
+exit.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+exit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+exit.BorderSizePixel = 0
+exit.Position = UDim2.new(0.9007833, 0, 0, 0)
+exit.Size = UDim2.new(0, 38, 0, 43)
+exit.Font = Enum.Font.SciFi
+exit.Text = "X"
+exit.TextColor3 = Color3.fromRGB(255, 255, 255)
+exit.TextSize = 30.000
+
+minimize.Name = "minimize"
+minimize.Parent = topbar
+minimize.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+minimize.BorderColor3 = Color3.fromRGB(0, 0, 0)
+minimize.BorderSizePixel = 0
+minimize.Position = UDim2.new(0.801566601, 0, 0, 0)
+minimize.Size = UDim2.new(0, 38, 0, 43)
+minimize.Font = Enum.Font.SciFi
+minimize.Text = "-"
+minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+minimize.TextSize = 30.000
+
+-- Scripts:
+
+local function PUYCQAH_fake_script() -- topbar.DragScript 
+	local script = Instance.new('LocalScript', topbar)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(PUYCQAH_fake_script)()
+local function STXOI_fake_script() -- label.RGB 
+	local script = Instance.new('LocalScript', label)
+
+	while true do
+		script.Parent.TextColor3 = Color3.new(255/255,0/255,0/255)
+		for i = 0,255,10 do
+			wait()
+			script.Parent.TextColor3 = Color3.new(255/255,i/255,0/255)
+		end
+		for i = 255,0,-10 do
+			wait()
+			script.Parent.TextColor3 = Color3.new(i/255,255/255,0/255)
+		end
+		for i = 0,255,10 do
+			wait()
+			script.Parent.TextColor3 = Color3.new(0/255,255/255,i/255)
+		end
+		for i = 255,0,-10 do
+			wait()
+			script.Parent.TextColor3 = Color3.new(0/255,i/255,255/255)
+		end
+		for i = 0,255,10 do
+			wait()
+			script.Parent.TextColor3 = Color3.new(i/255,0/255,255/255)
+		end
+		for i = 255,0,-10 do
+			wait()
+			script.Parent.TextColor3 = Color3.new(255/255,0/255,i/255)
+		end
+	end
+end
+coroutine.wrap(STXOI_fake_script)()
+local function GQUIX_fake_script() -- exit.exitscript 
+	local script = Instance.new('LocalScript', exit)
+
+	local button = script.Parent
+	local topbar = button.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		topbar.Visible = false
+	end)
+end
+coroutine.wrap(GQUIX_fake_script)()
+local function QURWJQI_fake_script() -- minimize.minimizescript 
+	local script = Instance.new('LocalScript', minimize)
+
+	local button = script.Parent
+	local topbar = button.Parent
+	local main = topbar:FindFirstChild("main")
+	
+	button.MouseButton1Click:Connect(function()
+	    main.Visible = not main.Visible
+	end)
+end
+coroutine.wrap(QURWJQI_fake_script)()
